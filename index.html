@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="generator" content="HTML Tidy, see www.w3.org">
+        <meta http-equiv="Content-Type" content= "text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>geojson > arcjson</title>
+		<link rel="icon" type="image/png" href="css/images/brs.png" >
+		<link rel="stylesheet" type="text/css" href="css/geo.css">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+
+        <script src="js/geo.js" type="text/javascript"></script>
+		<script src="js/geoutils.js" type="text/javascript"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript"></script>
+    </head>
+    <body>
+		<div class="row">
+			<span class="navbar navbar-fixed-top">
+				<span class="col-lg-2"></span>
+				<h2 class="col-lg-6">Convert geoJson to arcJson</h2>
+				<a class="col-lg-4" href="http://www.brightrain.com" target="_blank"><img id="logo-img" src="images/brs-logo.png" /></a>
+			</span>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div id="geoJson-to-arcJson-container" class="col-lg-6">
+					<div class="panel">geoJson to arcJson</div>
+					<textarea id="the-geojson" name="the-geojson" class="col-lg-12" rows=25 placeholder="put geojson here"></textarea>
+					<div>
+						<button type="submit" id="convert-to-arcjson-btn" class="btn">to arcjson</button>
+					</div>
+				</div>
+				<div id="converted-geojson-container" class="col-lg-6">
+					<div class="panel">results</div>
+					<textarea id="out-json" class="col-lg-12" rows=25 placeholder="converted geojson comes out here"></textarea>
+					<div>
+						<button id="view-map-btn" class="btn">see on a map</button>
+						<button id="clear-results-btn" class="btn">clear</button>
+					</div>
+				</div>
+			</div>
+			<div id="err" class="alert alert-danger">
+				<strong class="">Hmmm, something went wrong, you sure the input geojson is formatted correctly?</strong>
+			</div>
+			<!--
+			<div class="row">
+				<div id="arcJson-to-geoJson-container" class="col-lg-6">
+					<div class="panel">arcJson to geoJson</div>
+					<textarea id="the-arcjson" name="the-arcjson" class="col-lg-12" rows=20 placeholder="put arcjson here"></textarea>
+					<div>
+						<button type="submit" id="convert-to-geojson-btn" class="btn">to geojson</button>
+					</div>
+				</div>
+			</div>
+			-->
+		</div>
+		<div id="floating-map">
+			<button id="close-map-btn" class="btn">Close</button>
+			<div id="loading"></div>
+			<iframe frameborder="0" height="600" width="1200" scrolling="no" marginheight="0" marginwidth="0" src="http://www.arcgis.com/home/webmap/embedViewer.html?webmap=c2b4f4345b8b4c72a9efb601f023ff78&amp;extent=-122.8112,36.3888,-120.7828,37.3992&amp;zoom=true">
+
+			</iframe>
+		</div>
+
+		<div id="map-modal" class="modal fade modal-dialog">
+		  <div class="">
+			<div class="">
+			  <div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title">on a map</h4>
+			  </div>
+			  <div class="modal-body map">
+				<iframe frameborder="0" height="600" width="1200" scrolling="no" marginheight="0" marginwidth="0" src="http://www.arcgis.com/home/webmap/embedViewer.html?webmap=c2b4f4345b8b4c72a9efb601f023ff78&amp;extent=-122.8112,36.3888,-120.7828,37.3992&amp;zoom=true">
+
+				</iframe>
+			  </div>
+			  <div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			  </div>
+			</div>
+		  </div>
+		</div>
+
+    </body>
+</html>
