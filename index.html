@@ -27,22 +27,24 @@
 			<div class="row">
 				<div id="geoJson-to-arcJson-container" class="col-lg-6">
 					<div class="panel">geoJson to arcJson</div>
-					<textarea id="the-geojson" name="the-geojson" class="col-lg-12" rows=25 placeholder="put geojson here"></textarea>
-					<div>
-						<button type="submit" id="convert-to-arcjson-btn" class="btn">to arcjson</button>
-					</div>
+					<textarea id="the-geojson" name="the-geojson" class="col-lg-12" rows=25 placeholder="put geojson here">
+					</textarea>
+					<button id="clear-geojson-btn" class="btn text-float">clear</button>
+					
 				</div>
 				<div id="converted-geojson-container" class="col-lg-6">
 					<div class="panel">results</div>
-					<textarea id="out-json" class="col-lg-12" rows=25 placeholder="converted geojson comes out here"></textarea>
-					<div>
-						<button id="view-map-btn" class="btn">see on a map</button>
-						<button id="clear-results-btn" class="btn">clear</button>
-					</div>
+					<textarea id="out-json" class="col-lg-12" rows=25 placeholder="converted geojson comes out here">
+					</textarea>
+					<button id="clear-results-btn" class="btn text-float">clear</button>
 				</div>
 			</div>
-			<div id="err" class="alert alert-danger">
-				<strong class="">Hmmm, something went wrong, you sure the input geojson is formatted correctly?</strong>
+			<div class="row">
+				<div class="col-lg-2 col-lg-offset-3"><button type="submit" id="convert-to-arcjson-btn" class="btn">to arcjson ></button></div>
+				<div class="col-lg-2 col-lg-offset-4"><button id="view-map-btn" class="btn">see on a map</button></div>
+			</div>
+			<div id="err" class="row alert alert-danger">
+				<strong class="col-lg-12">Hmmm, something went wrong, you sure the input geojson is formatted correctly?</strong>
 			</div>
 			<!--
 			<div class="row">

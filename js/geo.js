@@ -4,8 +4,10 @@
 	$(document).ready(function(){
 		$("#err").hide();
 		$("#floating-map").hide();
+		$("#the-geojson").val("");
+		$("#out-json").val("");
 		//todo
-		$("#view-map-btn").hide();
+		//$("#view-map-btn").hide();
 		//
 		convertToEsri = geoJsonConverter();
 		convertToGeoJson = esriConverter();
@@ -44,6 +46,9 @@
 			$("#out-json").val(JSON.stringify(out, undefined, 2));
 		});
 		*/
+		$("#clear-geojson-btn").click(function() {
+			$("#the-geojson").val("");
+		});
 		$("#clear-results-btn").click(function() {
 			$("#out-json").val("");
 		});

@@ -27,6 +27,15 @@ iframe
 	float: left;
 	border: #294294 2px dotted;
 }
+button.text-float
+{
+	position: absolute;
+    right: 30px;
+	bottom: 20px;
+	z-index: 999999;
+	float: right;
+	width: 100px;
+}
 button#close-map-btn
 {
 	position: absolute;
