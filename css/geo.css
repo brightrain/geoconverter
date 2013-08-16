@@ -13,8 +13,8 @@ body {
 
 #floating-map
 {
-	width: 1200px;
-	height: 600px;
+	width: 90%;
+	height: 90%;
 	position: absolute;
     left: 80px;
 	top: 20px;
@@ -42,9 +42,9 @@ button.text-float
 button#close-map-btn
 {
 	position: absolute;
-    left: 500px;
-	top: 605px;
-	z-index: 999999;
+    left: 50%;
+	bottom: 5%;
+	z-index: 9999999;
 	float: left;
 	background-color: #e67e22;
 }
