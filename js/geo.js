@@ -7,7 +7,7 @@
 		$("#the-geojson").val("");
 		$("#out-json").val("");
 		//todo
-		$("#view-map-btn").hide();
+		//$("#view-map-btn").hide();
 		//
 		convertToEsri = geoJsonConverter();
 		convertToGeoJson = esriConverter();
