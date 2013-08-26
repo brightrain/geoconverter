@@ -47,7 +47,7 @@
 ,
 { "type": "Feature", "id": 22, "properties": { "Name": "Chase Field", "Description": "<div>Arizona Diamondbacks <br>401 East Jefferson Street <br>Phoenix, Arizona 85001 <br><br><a href='http://arizona.diamondbacks.mlb.com/ari/ballpark/index.jsp' target='_blank'>http://arizona.diamondbacks.mlb.com/ari/ballpark/index.jsp</a></div>" }, "geometry": { "type": "Point", "coordinates": [ -112.066643, 33.445316, 0.000000 ] } }
 ,
-{ "type": "Feature", "id": 23, "properties": { "Name": "Wrigley Field", "Description": "<div>Chicago Cubs <br>1060 West Addison Street <br>Chicago, Illinois 60613 <br><br><a href='http://chicago.cubs.mlb.com/chc/ballpark/index.jsp' target='_blank'>http://chicago.cubs.mlb.com/chc/ballpark/index.jsp</a></div>" }, "geometry": { "type": "Point", "coordinates": [ -87.655579, 41.948032, 0.000000 ] } }
+{ "type": "Feature", "id": 23, "properties": { "Name": "Wrigley Field", "Description": "<div><div><img src='http://chicago.cubs.mlb.com/chc/images/history/logo_1979.gif' /></div>Chicago Cubs <br>1060 West Addison Street <br>Chicago, Illinois 60613 <br><br><a href='http://chicago.cubs.mlb.com/chc/ballpark/index.jsp' target='_blank'>http://chicago.cubs.mlb.com/chc/ballpark/index.jsp</a></div>" }, "geometry": { "type": "Point", "coordinates": [ -87.655579, 41.948032, 0.000000 ] } }
 ,
 { "type": "Feature", "id": 24, "properties": { "Name": "Miller Park", "Description": "<div>Milwaukee Brewers <br>1 Brewers Way <br>Milwaukee, Wisconsin 53214 <br><br><a href='http://milwaukee.brewers.mlb.com/mil/ballpark/index.jsp' target='_blank'>http://milwaukee.brewers.mlb.com/mil/ballpark/index.jsp</a></div>" }, "geometry": { "type": "Point", "coordinates": [ -87.971825, 43.029152, 0.000000 ] } }
 ,
@@ -57,7 +57,7 @@
 ,
 { "type": "Feature", "id": 27, "properties": { "Name": "Progressive Field", "Description": "<div>Cleveland Indians <br>2401 Ontario Street <br>Cleveland, Ohio 44115 <br><br><a href='http://cleveland.indians.mlb.com/cle/ballpark/index.jsp' target='_blank'>http://cleveland.indians.mlb.com/cle/ballpark/index.jsp</a></div>" }, "geometry": { "type": "Point", "coordinates": [ -81.684982, 41.495850, 0.000000 ] } }
 ,
-{ "type": "Feature", "id": 28, "properties": { "Name": "Nationals Park", "Description": "<div>Washington Nationals <br>1500 South Capitol Street, SE<br>Washington, DC 20003-1507. <br><br><a href='http://washington.nationals.mlb.com/was/ballpark/index.jsp' target='_blank'>http://washington.nationals.mlb.com/was/ballpark/index.jsp</a></div>" }, "geometry": { "type": "Point", "coordinates": [ -77.007462, 38.872593, 0.000000 ] } }
+{ "type": "Feature", "id": 28, "properties": { "Name": "Nationals Park", "Description": "<div><div><img src='http://upload.wikimedia.org/wikipedia/en/thumb/6/6c/Washington_Nationals_2011.png/100px-Washington_Nationals_2011.png' /></div>Washington Nationals <br>1500 South Capitol Street, SE<br>Washington, DC 20003-1507. <br><br><a href='http://washington.nationals.mlb.com/was/ballpark/index.jsp' target='_blank'>http://washington.nationals.mlb.com/was/ballpark/index.jsp</a></div>" }, "geometry": { "type": "Point", "coordinates": [ -77.007462, 38.872593, 0.000000 ] } }
 ,
 { "type": "Feature", "id": 29, "properties": { "Name": "Safeco Field", "Description": "<div>Seattle Mariners <br>1250 First Avenue South <br>Seattle, WA 98134 <br><br><a href='http://seattle.mariners.mlb.com/sea/ballpark/index.jsp' target='_blank'>http://seattle.mariners.mlb.com/sea/ballpark/index.jsp</a></div>" }, "geometry": { "type": "Point", "coordinates": [ -122.331947, 47.590969, 0.000000 ] } }
 ]
