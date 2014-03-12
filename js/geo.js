@@ -4,10 +4,10 @@
 	$(document).ready(function(){
 		$("#err").hide();
 		$("#floating-map").hide();
-		$("#the-geojson").val("");
-		$("#out-json").val("");
+		$("#geojson").val("");
+		$("#arcjson").val("");
 		//todo
-		//$("#view-map-btn").hide();
+		$("#view-map-btn").hide();
 		//
 		convertToEsri = geoJsonConverter();
 		convertToGeoJson = esriConverter();
@@ -16,15 +16,25 @@
 			$("#err").hide();
 			try
 			{
-				var parseOut = JSON.parse($("#the-geojson").val());
+				var parseOut = JSON.parse($("#geojson").val());
 				out = convertToEsri.toEsri(parseOut);
-				$("#out-json").val("");
-				$("#out-json").val(JSON.stringify(out, undefined, 2));
+				$("#arcjson").val("");
+				$("#arcjson").val(JSON.stringify(out, undefined, 2));
 			}
 			catch(e)
 			{
 				$("#err").show();
 			}
+		});
+        $("#convert-to-geojson-btn").click(function() {
+			try {
+            var out = convertToGeoJson.toGeoJson(JSON.parse($("#arcjson").val()));
+			$("#geojson").val("");
+			$("#geojson").val(JSON.stringify(out, undefined, 2));
+            }
+            catch(e) {
+                $("#err").show();
+            }
 		});
 		$("#view-map-btn").click(function() {
 			$.post("http://services1.arcgis.com/mRXrgD3LWwGHJmpS/arcgis/rest/services/sweetpolys/FeatureServer/0/addFeatures?f=json&features=" 
@@ -39,18 +49,11 @@
 		$("#close-map-btn").click(function() {
 			$("#floating-map").hide();
 		});
-		/*
-		$("#convert-to-geojson-btn").click(function() {
-			var out = convertToGeoJson.toGeoJson(JSON.parse($("#the-arcjson").val()));
-			$("#out-json").val("");
-			$("#out-json").val(JSON.stringify(out, undefined, 2));
-		});
-		*/
 		$("#clear-geojson-btn").click(function() {
-			$("#the-geojson").val("");
+			$("#geojson").val("");
 		});
 		$("#clear-results-btn").click(function() {
-			$("#out-json").val("");
+			$("#arcjson").val("");
 		});
 		
 	});

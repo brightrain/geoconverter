@@ -4,7 +4,7 @@
         <meta name="generator" content="HTML Tidy, see www.w3.org">
         <meta http-equiv="Content-Type" content= "text/html; charset=utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-		<title>geojson > arcjson</title>
+		<title>geojson <> arcjson</title>
 		<link rel="icon" type="image/png" href="images/brs.png" >
 		<link rel="stylesheet" type="text/css" href="css/geo.css">
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
@@ -19,44 +19,40 @@
 		<div class="row">
 			<span class="navbar navbar-fixed-top">
 				<span class="col-lg-2"></span>
-				<h2 class="col-lg-6">Convert geoJson to arcJson</h2>
+				<h2 class="col-lg-6">Convert between geoJson and arcJson</h2>
 				<a class="col-lg-4" href="http://www.brightrain.com" target="_blank"><img id="logo-img" src="images/brs-logo.png" /></a>
 			</span>
 		</div>
 		<div class="container">
 			<div class="row">
-				<div id="geoJson-to-arcJson-container" class="col-lg-6">
+				<div id="geojson-container" class="col-lg-6">
 					<div class="panel">geoJson to arcJson</div>
-					<textarea id="the-geojson" name="the-geojson" class="col-lg-12" rows=25 placeholder="put geojson here">
+					<textarea id="geojson" name="the-geojson" class="col-lg-12" rows=25 placeholder="geojson happens here">
 					</textarea>
 					<button id="clear-geojson-btn" class="btn text-float">clear</button>
 					
 				</div>
-				<div id="converted-geojson-container" class="col-lg-6">
+				<div id="arcjson-container" class="col-lg-6">
 					<div class="panel">results</div>
-					<textarea id="out-json" class="col-lg-12" rows=25 placeholder="converted geojson comes out here">
+					<textarea id="arcjson" class="col-lg-12" rows=25 placeholder="arcjson happens here">
 					</textarea>
 					<button id="clear-results-btn" class="btn text-float">clear</button>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-lg-2 col-lg-offset-3"><button type="submit" id="convert-to-arcjson-btn" class="btn">to arcjson ></button></div>
-				<div class="col-lg-2 col-lg-offset-4"><button id="view-map-btn" class="btn">see on a map</button></div>
+				<div class="col-lg-3"></div>
+                <div class="col-lg-2">
+                    <button type="submit" id="convert-to-arcjson-btn" class="btn">to arcjson > </button>
+                </div>
+                <div class="col-lg-2"></div>
+				<div class="col-lg-2">
+                    <button type="submit" id="convert-to-geojson-btn" class="btn"> < to geojson</button>
+                </div>
+                <div class="col-lg-2 col-lg-offset-4"><button id="view-map-btn" class="btn">see on a map</button></div>
 			</div>
 			<div id="err" class="row alert alert-danger">
 				<strong class="col-lg-12">Hmmm, something went wrong, you sure the input geojson is formatted correctly?</strong>
 			</div>
-			<!--
-			<div class="row">
-				<div id="arcJson-to-geoJson-container" class="col-lg-6">
-					<div class="panel">arcJson to geoJson</div>
-					<textarea id="the-arcjson" name="the-arcjson" class="col-lg-12" rows=20 placeholder="put arcjson here"></textarea>
-					<div>
-						<button type="submit" id="convert-to-geojson-btn" class="btn">to geojson</button>
-					</div>
-				</div>
-			</div>
-			-->
 		</div>
 		<div id="floating-map">
 			<button id="close-map-btn" class="btn">Close</button>
