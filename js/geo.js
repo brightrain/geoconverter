@@ -3,11 +3,11 @@
 	var convertToEsri;
 	$(document).ready(function(){
 		$("#err").hide();
-		$("#floating-map").hide();
 		$("#geojson").val("");
 		$("#arcjson").val("");
 		//todo
 		$("#view-map-btn").hide();
+        //$("#floating-map").hide();
 		//
 		convertToEsri = geoJsonConverter();
 		convertToGeoJson = esriConverter();
@@ -36,6 +36,19 @@
                 $("#err").show();
             }
 		});
+        $("#select-geojson-btn").click(function() {
+			$("#geojson").select();
+		});
+        $("#select-arcjson-btn").click(function() {
+			$("#arcjson").select();
+		});
+		$("#clear-geojson-btn").click(function() {
+			$("#geojson").val("");
+		});
+		$("#clear-results-btn").click(function() {
+			$("#arcjson").val("");
+		});
+        /*
 		$("#view-map-btn").click(function() {
 			$.post("http://services1.arcgis.com/mRXrgD3LWwGHJmpS/arcgis/rest/services/sweetpolys/FeatureServer/0/addFeatures?f=json&features=" 
 				+ JSON.stringify(out.features), function(resp) {
@@ -46,15 +59,9 @@
 				}
 			});
 		});
-		$("#close-map-btn").click(function() {
+        */
+        $("#close-map-btn").click(function() {
 			$("#floating-map").hide();
 		});
-		$("#clear-geojson-btn").click(function() {
-			$("#geojson").val("");
-		});
-		$("#clear-results-btn").click(function() {
-			$("#arcjson").val("");
-		});
-		
 	});
 }())

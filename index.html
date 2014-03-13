@@ -29,13 +29,15 @@
 					<div class="panel">geoJson to arcJson</div>
 					<textarea id="geojson" name="the-geojson" class="col-lg-12" rows=25 placeholder="geojson happens here">
 					</textarea>
-					<button id="clear-geojson-btn" class="btn text-float">clear</button>
+					<button id="select-geojson-btn" class="btn select-all">select all</button>
+                    <button id="clear-geojson-btn" class="btn text-float">clear</button>
 					
 				</div>
 				<div id="arcjson-container" class="col-lg-6">
 					<div class="panel">results</div>
 					<textarea id="arcjson" class="col-lg-12" rows=25 placeholder="arcjson happens here">
 					</textarea>
+                    <button id="select-arcjson-btn" class="btn select-all">select all</button>
 					<button id="clear-results-btn" class="btn text-float">clear</button>
 				</div>
 			</div>
@@ -54,12 +56,14 @@
 				<strong class="col-lg-12">Hmmm, something went wrong, you sure the input geojson is formatted correctly?</strong>
 			</div>
 		</div>
-		<div id="floating-map">
+		<!--
+        <div id="floating-map">
 			<button id="close-map-btn" class="btn">Close</button>
 			<div id="loading"></div>
 			<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://www.arcgis.com/home/webmap/embedViewer.html?webmap=c2b4f4345b8b4c72a9efb601f023ff78&amp;extent=-122,30,-80,47&amp;zoom=true">
 			</iframe>
 		</div>
+        -->
 		<!--
 		<div id="map-modal" class="modal fade modal-dialog">
 		  <div class="">
