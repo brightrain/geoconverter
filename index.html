@@ -9,9 +9,9 @@
 		<link rel="stylesheet" type="text/css" href="css/geo.css">
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 
-		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+		<script src="//code.jquery.com/jquery-1.10.1.min.js"></script>
 
-        <script src="js/geo.js" type="text/javascript"></script>
+  	<script src="js/geo.js" type="text/javascript"></script>
 		<script src="js/geoutils.js" type="text/javascript"></script>
 		<script src="js/bootstrap.min.js" type="text/javascript"></script>
     </head>
@@ -20,7 +20,7 @@
 			<span class="navbar navbar-fixed-top">
 				<span class="col-lg-2"></span>
 				<h2 class="col-lg-6">Convert between geoJson and arcJson</h2>
-				<a class="col-lg-4" href="http://www.brightrain.com" target="_blank"><img id="logo-img" src="images/brs-logo.png" /></a>
+				<a class="col-lg-4" href="//brightrain.com" target="_blank"><img id="logo-img" src="//brightrain.com/images/brightrain.png" /></a>
 			</span>
 		</div>
 		<div class="container">
@@ -40,6 +40,7 @@
                     <button id="select-arcjson-btn" class="btn select-all">select all</button>
 					<button id="clear-results-btn" class="btn text-float">clear</button>
 				</div>
+				<button id="see-arcjson-example-btn" class="btn text-float">see example input</button>
 			</div>
 			<div class="row">
 				<div class="col-lg-3"></div>
@@ -48,22 +49,63 @@
                 </div>
                 <div class="col-lg-2"></div>
 				<div class="col-lg-2">
-                    <button type="submit" id="convert-to-geojson-btn" class="btn"> < to geojson</button>
-                </div>
-                <div class="col-lg-2 col-lg-offset-4"><button id="view-map-btn" class="btn">see on a map</button></div>
+						<button type="submit" id="convert-to-geojson-btn" class="btn"> < to geojson</button>
+				</div>
+        <!--<div class="col-lg-2 col-lg-offset-4"><button id="view-map-btn" class="btn">see on a map</button></div>-->
 			</div>
 			<div id="err" class="row alert alert-danger">
 				<strong class="col-lg-12">Hmmm, something went wrong, you sure the input geojson is formatted correctly?</strong>
 			</div>
 		</div>
+		<div id="arcjson-example-modal" class="modal fade modal-dialog">
+			<div>
+			  <div class="modal-body">
+					<p id="arcjson-json" class="example-text">
+						{
+							"features": [
+									{
+										"geometry": {
+											"x": -56.093017578125,
+											"y": -15.614990234375
+										},
+										"attributes": {
+											"OBJECTID": 1,
+											"CITY_NAME": "Cuiaba",
+											"POP": 521934,
+											"POP_RANK": 3,
+											"POP_CLASS": "500,000 to 999,999",
+											"LABEL_FLAG": 0
+										}
+									}
+							]
+						}
+					</p>
+			  </div>
+			  <div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			  </div>
+			</div>
+		</div>
+		<div id="geojson-example-modal" class="modal fade modal-dialog">
+			<div>
+			  <div class="modal-body">
+					<p id="geojson-json" class="example-text">
+						geojson example
+					</p>
+			  </div>
+			  <div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			  </div>
+			</div>
+		</div>
 		<!--
-        <div id="floating-map">
+    <div id="floating-map">
 			<button id="close-map-btn" class="btn">Close</button>
 			<div id="loading"></div>
 			<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://www.arcgis.com/home/webmap/embedViewer.html?webmap=c2b4f4345b8b4c72a9efb601f023ff78&amp;extent=-122,30,-80,47&amp;zoom=true">
 			</iframe>
 		</div>
-        -->
+   	-->
 		<!--
 		<div id="map-modal" class="modal fade modal-dialog">
 		  <div class="">

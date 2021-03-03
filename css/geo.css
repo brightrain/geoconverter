@@ -66,9 +66,8 @@ textarea
 	font-size: 75%;	
 }
 #logo-img {
-	max-width:100%;
-    height:auto;
-    display:block;
+  height:100px;
+  display:block;
 	float: right;	
 }
 #loading

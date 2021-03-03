@@ -48,6 +48,12 @@
 		$("#clear-results-btn").click(function() {
 			$("#arcjson").val("");
 		});
+		$("#see-arcjson-example-btn").click(function() {
+			$("#arcjson-example-modal").modal();
+		});
+		$("#see-geojson-example-btn").click(function() {
+			$("#geojson-example-modal").modal();
+		});
         /*
 		$("#view-map-btn").click(function() {
 			$.post("http://services1.arcgis.com/mRXrgD3LWwGHJmpS/arcgis/rest/services/sweetpolys/FeatureServer/0/addFeatures?f=json&features=" 
