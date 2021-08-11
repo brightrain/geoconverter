@@ -5,7 +5,6 @@
 		$("#err").hide();
 		$("#geojson").val("");
 		$("#arcjson").val("");
-		//todo
 		$("#view-map-btn").hide();
         //$("#floating-map").hide();
 		//
